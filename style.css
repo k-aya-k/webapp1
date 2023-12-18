@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title_area h2 {
+font-weight: unset;
+}
+
+.title_area h2 span {
+    font-weight: bold;
+    color: crimson;
+    font-size: 32px;
+}
+
+.input_area {
+    background: #f27f7f;
+    width: 400px;
+    height: 50px;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 8px;
+}
+
+input {
+    width: 80%;
+    border-radius: 16px;
+    padding: 8px 16px;
+    border: none;
+}
+
+button {
+    background: white;
+    border-radius: 16px;
+    border: none;
+    padding: 4px 16px;
+    margin-left: 8px;
+}
+
+button:hover {
+    background: #04a0dd;
+    color: white;
+    cursor: pointer;
+}
+
+.list_area {
+    background: #f27f7f;
+    width: 400px;
+    min-height: 200px;
+    padding: 8px;
+    margin: 16px;
+    border-radius: 8px;
+}
+
+ul {
+    margin-left: 16px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+p{
+    font-weight: bold;
+}
+
+.list_box {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+h3{
+color: white;
+text-align: center;
+margin: 8px 0;
+}
+
+.lottery_area {
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+#lottery_button{
+    border: 2px solid #f54949;
+    border-radius: 16px;
+    background-color: #f27f7f;
+}
+
+.result_area {
+    background: rgb(255, 170, 12);
+    width: 400px;
+    min-height: 150px;
+    text-align: center;
+    margin-top: 16px;
+    border-radius: 16px;
+}
+
+.result_box {
+    width: 100%;
+    text-align: center;
+}
+
+#onemore {
+    margin: 32px;
+}
+
+.onemorebutton {
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(50, 243, 179);
+}
