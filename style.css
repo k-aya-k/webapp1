@@ -32,7 +32,7 @@ font-weight: unset;
 }
 
 input {
-    width: 80%;
+    width: 70%;
     border-radius: 16px;
     padding: 8px 16px;
     border: none;
@@ -122,4 +122,24 @@ margin: 8px 0;
     color: white;
     font-weight: bold;
     background-color: rgb(50, 243, 179);
+}
+
+br {
+    display: none;
+}
+
+@media screen and (max-width:400px){
+    
+br{
+    display: block;
+}
+
+.input_area,
+.list_area,
+.lottery_area,
+.result_area
+{
+    width: 300px;
+}
+
 }

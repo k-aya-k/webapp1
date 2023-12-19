@@ -1,6 +1,6 @@
 document.getElementById("add_button").addEventListener("click", () => onclickAdd());
 const hairetu = [];//リストを添え字で持ってくるための配列を作る 
-
+document.getElementById("lottery_button").disabled = true;
 // input text
 const onclickAdd = () => {
     if (!document.getElementById("add_text").value == "") {
@@ -19,6 +19,7 @@ const onclickAdd = () => {
         ptag.innerHTML = inputText;
         document.getElementById("list").appendChild(li);
         hairetu.push(inputText);
+        document.getElementById("lottery_button").disabled = false;
     }
 }
 //lottery_button 
@@ -37,13 +38,13 @@ const onclickLottery = () => {
 
     lotterytarget.appendChild(h1);
     document.getElementById("list").textContent = null;
-    document.getElementById("lottery_button").disabled = true;
     document.getElementById("lottery_button").style.backgroundColor = "gray";
     const onemore = document.getElementById("onemore");
     const onemoreButton = document.createElement("button");
     onemoreButton.innerHTML = "もう1回";
     onemoreButton.classList.add ("onemorebutton");
     onemore.appendChild(onemoreButton);
+    document.getElementById("lottery_button").disabled = true;
     onemoreButton.addEventListener("click", function(){
         window.location.reload();
         })
